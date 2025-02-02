@@ -1,0 +1,7 @@
+.cursor/
+.cursorrules
+node_modules/
+out/
+.vscode/
+.vscode-test/
+.vscode-test-sample/

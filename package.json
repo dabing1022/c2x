@@ -1,0 +1,55 @@
+{
+    "name": "c2x",
+    "displayName": "C2X",
+    "description": "Open current file or project in Xcode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:C2X.openFileInXcode",
+        "onCommand:C2X.openProjectInXcode"
+    ],
+    "main": "./out/c2x.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "C2X.openFileInXcode",
+                "title": "Open File in Xcode"
+            },
+            {
+                "command": "C2X.openProjectInXcode",
+                "title": "Open Project in Xcode"
+            }
+        ],
+        "configuration": {
+            "title": "C2X",
+            "properties": {
+                "c2x.xcodePath": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Path to Xcode.app"
+                }
+            }
+        },
+        "keybindings": [
+            {
+                "command": "C2X.openFileInXcode",
+                "key": "cmd+shift+x",
+                "mac": "cmd+shift+x"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^16.0.0",
+        "@types/vscode": "^1.60.0",
+        "typescript": "^5.7.3"
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    }
+}
