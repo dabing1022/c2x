@@ -5,3 +5,4 @@ out/
 .vscode/
 .vscode-test/
 .vscode-test-sample/
+*.vsix

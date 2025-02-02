@@ -1,6 +1,7 @@
 {
     "name": "c2x",
     "displayName": "C2X",
+    "publisher": "ChildhoodAndy",
     "description": "Open current file or project in Xcode",
     "version": "0.0.1",
     "engines": {
@@ -55,5 +56,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/dabing1022/c2x.git"
-    }
+    },
+    "icon": "images/icon.png"
 }
