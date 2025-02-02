@@ -51,5 +51,9 @@
     "scripts": {
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dabing1022/c2x.git"
     }
 }
